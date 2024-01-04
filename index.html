@@ -5,52 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/svg">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Advice Generator</title>
 </head>
 
 <body>
+    <!-- Main -->
     <main>
-        <div class="advice-component">
-            <h1 class="header">Advice #1</h1>
-            <p class="advice-paragraph">
-                "Show up fully. Don't dwell on the past,
-                and don't daydream about the future,
-                but concentrate on showing up fully in the present moment."
+
+        <!-- Advice Container -->
+        <div class="advice-container">
+            <!-- Advice ID goes here -->
+            <p class="advice-id">
+                Advice #<span id="advice-number"></span>
             </p>
-
-            <div class="divider">
-                <svg class="desktop-divider" width="444" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <g fill="none" fill-rule="evenodd">
-                        <path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z" />
-                        <g transform="translate(212)" fill="#CEE3E9">
-                            <rect width="6" height="16" rx="3" />
-                            <rect x="14" width="6" height="16" rx="3" />
-                        </g>
-                    </g>
-                </svg>
-                <svg class="mobile-divider" width="295" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <g fill="none" fill-rule="evenodd">
-                        <path fill="#4F5D74" d="M0 8h122v1H0zM173 8h122v1H173z" />
-                        <g transform="translate(138)" fill="#CEE3E9">
-                            <rect width="6" height="16" rx="3" />
-                            <rect x="14" width="6" height="16" rx="3" />
-                        </g>
-                    </g>
-                </svg>
-            </div>
-
-            <button aria-label="generator" class="advice-generator">
-                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
-                        fill="#202733" />
-                </svg>
-            </button>
+            <!-- Advice text goes here -->
+            <p class="advice-text">Loading..</p>
         </div>
+
+        <!-- Divider -->
+        <img src="images/pattern-divider-desktop.svg" alt="Divider" class="divider">
+
+        <!-- Dice Button -->
+        <button id="dice">
+            <img src="images/icon-dice.svg" alt="Dice To Generate New Advice">
+        </button>
+
     </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
